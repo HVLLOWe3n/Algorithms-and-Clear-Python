@@ -43,3 +43,51 @@ print(3 ** 150)
 # int.to_bytes(length, byteorder, *, signed=False) - возвращает строку байтов, представляющих это число.
 a = (1024).to_bytes(2, byteorder='big')
 print(a, type(a))
+
+# a = input('Press you name: ')
+#
+# str_name = 'Hello, {0}!'.format(a)
+# print(str_name)
+
+print(3 // 4, 4 + False - True)
+print((2 + 3) * 4, 2 + (3 * 4))
+
+
+time = input('Input you time right now: ')
+
+try:
+    if int(time) <= 12:
+        print('Good Morning!')
+
+    elif (int(time) > 12) and (int(time) < 16):
+        print('Good Day!')
+
+    else:
+        print('Good Evening!')
+
+except ValueError:
+    print('You must input integer value!')
+
+import random
+
+running = True
+
+while running:
+    try:
+        my_val = input('Input you value from 1 .. 6: ')
+
+        if my_val == random.randrange(6):
+            print('Success, congratulations!')
+
+            break
+        else:
+            print('None right, try again :)')
+    except ValueError:
+        print('You must input you value from 1 .. 6')
+
+# ## loop for ##
+
+for i in range(1, 20):
+    print(i)
+
+
