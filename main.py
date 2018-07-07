@@ -1,3 +1,8 @@
+import random
+
+from Bubble_Sort_Algorithm import bubble_sort
+from Fibonachi_Digits_Algorithm import fibonach_digits
+
 # Standart Types of Python
 a = 3                   # a - class integer
 new_a = 3.1415          # new_a - class float
@@ -68,22 +73,20 @@ try:
 except ValueError:
     print('You must input integer value!')
 
-import random
-
 running = True
 
-while running:
-    try:
-        my_val = input('Input you value from 1 .. 6: ')
-
-        if my_val == random.randrange(6):
-            print('Success, congratulations!')
-
-            break
-        else:
-            print('None right, try again :)')
-    except ValueError:
-        print('You must input you value from 1 .. 6')
+# while running:
+#     try:
+#         my_val = input('Input you value from 1 .. 6: ')
+#
+#         if my_val == random.randrange(6):
+#             print('Success, congratulations!')
+#
+#             break
+#         else:
+#             print('None right, try again :)')
+#     except ValueError:
+#         print('You must input you value from 1 .. 6')
 
 # ## loop for ##
 
@@ -91,3 +94,6 @@ for i in range(1, 20):
     print(i)
 
 
+for i in range(2, 10):
+
+    print(fibonach_digits(i))
