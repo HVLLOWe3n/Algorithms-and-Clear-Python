@@ -13,7 +13,7 @@ def simple_fibonachi(n):
     if n <= 0 or n <= 1:
         return
 
-    preview = 1
+    preview = 0
     preview_preview = 1
     result = 0
 
@@ -23,11 +23,13 @@ def simple_fibonachi(n):
         preview_preview = preview
         preview = result
 
+        print(result)       # for debugging
+
     return result
 
 
 #
-# Hard realise
+# Hard Realise
 # with recursion
 #
 

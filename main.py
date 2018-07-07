@@ -1,7 +1,7 @@
 import random
 
 from Bubble_Sort_Algorithm import bubble_sort
-from Fibonachi_Digits_Algorithm import fibonach_digits
+from Fibonachi_Digits_Algorithm.fibonach_digits import simple_fibonachi
 
 # Standart Types of Python
 a = 3                   # a - class integer
@@ -93,7 +93,3 @@ running = True
 for i in range(1, 20):
     print(i)
 
-
-for i in range(2, 10):
-
-    print(fibonach_digits(i))
