@@ -54,3 +54,13 @@ print(s.isspace())
 print(s.capitalize())
 
 print(s.format())
+
+s1 = s
+
+print(s1, id(s1))
+print(s, id(s))
+
+s1 += ' Yeah'
+
+print(s1.split('is'))
+print(s)
