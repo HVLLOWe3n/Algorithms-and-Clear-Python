@@ -33,5 +33,9 @@ def simple_fibonachi(n):
 # with recursion
 #
 
-def recursion_fibonachi():
-    pass
+def recursion_fibonachi(n):
+    if n > 10:
+        recursion_fibonachi(n - 1)
+
+    else:
+        return n
