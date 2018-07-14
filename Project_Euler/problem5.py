@@ -8,9 +8,11 @@ for j in range(0, 1000):
 
         if result[::-1] == result:
 
+
             if palindrome < int(result):
-                 palindrome = result
-                 print(palindrome)
+                print(type(palindrome) and type(int(result)))
+                palindrome = result
+
 
 
 
