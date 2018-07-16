@@ -1,5 +1,12 @@
-result = 0
-palindrome = 0
+#
+# Problem 5 - max number of palindrome 3 - th:
+# problem5.py
+# Author code: @RomanDemyanchuk (HVLLOWe3n)
+#
+
+
+result = 0      # Result variable for loops cycle
+palindrome = 0  # Min and then Max Number palindrome
 
 for j in range(0, 1000):
 
@@ -8,13 +15,10 @@ for j in range(0, 1000):
 
         if result[::-1] == result:
 
-
-            if palindrome < int(result):
-                print(type(palindrome) and type(int(result)))
+            if int(palindrome) < int(result):
                 palindrome = result
 
-
-
+print(palindrome)
 
 
 
