@@ -19,6 +19,3 @@ for j in range(0, 1000):
                 palindrome = result
 
 print(palindrome)
-
-
-
