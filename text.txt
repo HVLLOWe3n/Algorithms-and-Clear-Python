@@ -1,0 +1,1 @@
+This is a simple text for class FileObject in module classes.py
